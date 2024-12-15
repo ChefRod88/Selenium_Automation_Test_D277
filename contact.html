@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li class="btn"><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                <li class="btn"><a href="capital.html" aria-label="Learn about Tallahassee">Tallahassee</a></li>
+                <li class="btn"><a href="orlando.html" aria-label="Explore Orlando">Orlando</a></li>
+                <li class="btn"><a href="miami.html" aria-label="Discover Miami">Miami</a></li>
+                <li class="btn"><a href="contact.html" aria-label="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <form id="contact-form" action="/submit-form" method="POST" onsubmit="return validateForm()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="confirm-email">Confirm Email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email" required>
+            
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" placeholder="Enter your question" required></textarea>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+        <aside>
+            <h3>Quick Links About Florida</h3>
+            <ul>
+                <li><a href="https://www.visitflorida.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Florida Official Site">Visit Florida Official Site</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Florida" target="_blank" rel="noopener noreferrer" aria-label="Florida on Wikipedia">Florida on Wikipedia</a></li>
+                <li><a href="https://www.floridastateparks.org/" target="_blank" rel="noopener noreferrer" aria-label="Explore Florida State Parks">Florida State Parks</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2024 Discover Florida</p>
+    </footer>
+
+    <!-- Reference List Section -->
+    <section id="references">
+        <h3>References</h3>
+        <ul>
+            <li>Visit Florida. (2024). <i>Visit Florida Official Site</i>. Retrieved from <a href="https://www.visitflorida.com/" target="_blank">https://www.visitflorida.com/</a></li>
+            <li>Wikipedia contributors. (2024). <i>Florida</i>. Wikipedia, The Free Encyclopedia. Retrieved from <a href="https://en.wikipedia.org/wiki/Florida" target="_blank">https://en.wikipedia.org/wiki/Florida</a></li>
+            <li>Florida State Parks. (2024). <i>Florida State Parks Official Site</i>. Retrieved from <a href="https://www.floridastateparks.org/" target="_blank">https://www.floridastateparks.org/</a></li>
+        </ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+@keyframes backgroundChange {
+    0% {
+        background-image: url('images/capital.jpg');
+    }
+    33% {
+        background-image: url('images/orlando\ skyline.jpg');
+    }
+    66% {
+        background-image: url('images/miami\ skyline.jpg');
+    }
+    100% {
+        background-image: url('images/capital.jpg');
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    animation: backgroundChange 20s infinite alternate;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Section_Top {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(139, 27, 27, 0.226);
+}
+
+.Section_Top h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #001f3f;
+    color: white;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+aside:hover {
+    transform: translateY(-10px);
+}
+
+aside h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #0074D9;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+aside ul li a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 20px 50px;
+    margin-top: 70px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6347, #ff0000);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #FF4500, #FF1493);
+}
+
+.btn::after {
+   content: "";
+   z-index: -1;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #333;
+   left: 0;
+   top: 0;
+   border-radius: 25px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+    filter: blur(12px);
+}
+
+#welcome {
+    position: relative;
+    font-size: 1.8rem;
+    color: #2a7db9;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#welcome {
+    font-size: 75px;
+}
+
+#absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-image {
+    float: right;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    height: 28%;
+    width: 28%;
+}
+
